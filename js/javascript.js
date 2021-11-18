@@ -86,7 +86,7 @@
             count =0;
             guess.style.display = 'flex';
             rand.style.bottom = '-10px';
-            i1.style.marginBottom = '0'
+            i1.style.marginBottom = '5px'
             i2.style.marginBottom = '0'
         }else{
             console.log('else')
