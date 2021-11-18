@@ -88,7 +88,7 @@
             i1.style.marginBottom = '5px'
             i2.style.marginBottom = '0'
         }else{
-            console.log('else')
+            // console.log('else')
             err()
         }
     }

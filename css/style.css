@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Roboto+Slab:wght@200;400&family=Shippori+Antique&display=swap');
 main{
     display: flex;
     flex-direction: column;
@@ -6,6 +6,7 @@ main{
     align-items: center;
     background-color: rgb(48, 156, 106);
     padding-bottom: 40vh;
+    font-family: 'Roboto Slab', serif;
 }
 main>h1{
     background-color: white;
