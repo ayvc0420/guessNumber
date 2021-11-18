@@ -106,6 +106,7 @@ input{
     margin: 0 auto;
     color: rgb(201, 17, 17);
     font-weight: 900;
+    font-size: 20px;
 }
 footer{
     text-align: center;
