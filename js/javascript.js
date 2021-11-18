@@ -54,9 +54,11 @@
         answerMax = numberMax;
         answerMin = numberMin;
         
+        // 錯誤條件共用 避免寫更多if判斷
         if(numberMin >= numberMax){
             err()
         }else if(numberMin === 0 && numberMax === 0){
+            err()
         }else if(isNaN(inputMin.value) || isNaN(inputMax.value)){
             err()
         }else if(inputMin.value === '' || inputMax.value === ''){
@@ -115,10 +117,6 @@
         `
             
         `
-        // const now_width = document.documentElement.scrollWidth;
-        // if(now_width <= 1023){
-        //     rand.style.bottom = '-20px';
-        // }
         i1.style.marginBottom = '50px'
         i2.style.marginBottom = '50px'
     }
