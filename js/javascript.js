@@ -115,12 +115,12 @@
         `
             
         `
-        const now_width = document.documentElement.scrollWidth;
-        if(now_width <= 1023){
-            rand.style.bottom = '-20px';
-        }
-        i1.style.marginBottom = '100px'
-        i2.style.marginBottom = '100px'
+        // const now_width = document.documentElement.scrollWidth;
+        // if(now_width <= 1023){
+        //     rand.style.bottom = '-20px';
+        // }
+        i1.style.marginBottom = '50px'
+        i2.style.marginBottom = '50px'
     }
     guessInput.addEventListener('keypress',function(event){
         if(event.key === 'Enter'){
