@@ -115,7 +115,10 @@
         `
             
         `
-        rand.style.bottom = '-20px';
+        const now_width = document.documentElement.scrollWidth;
+        if(now_width <= 1023){
+            rand.style.bottom = '-20px';
+        }
         i1.style.marginBottom = '100px'
         i2.style.marginBottom = '100px'
     }
