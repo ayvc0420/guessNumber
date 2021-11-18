@@ -10,22 +10,22 @@ main{
 main>h1{
     background-color: white;
     border-radius: 5px;
-    padding: 5px 20px;
+    padding: 8px 25px;
     font-weight: 900;
-    font-size: 48px;
+    font-size: 52px;
     margin: 20px 0;
     color: rgb(0, 0, 0);
 }
 main>h3{
     font-weight: 300;
-    font-size: 32px;
+    font-size: 36px;
     margin: 10px 0;
     color: cyan;
 }
 main>span{
     color: rgb(125, 255, 194);
     font-weight: 700;
-    font-size: 28px;
+    font-size: 32px;
     padding: 0 20px;
     text-align: center;
     line-height: 1.3;
@@ -34,7 +34,7 @@ main>span{
     display: flex;
     align-items: flex-start;
     color: cyan;
-    font-size: 28px;
+    font-size: 32px;
 }
 .scanf>span{
     display: flex; 
@@ -59,8 +59,9 @@ button:hover{
     filter: brightness(130%);
 }
 .scope{
+    display: block;
     color: yellow;
-    font-size: 26px;
+    font-size: 30px;
     text-align: center;
 }
 .guess{
@@ -69,7 +70,7 @@ button:hover{
     flex-direction: column;
     align-items: flex-start;
     color: cyan;
-    font-size: 28px;
+    font-size: 30px;
     display: none;
 }
 .guess>span{
@@ -89,7 +90,7 @@ input{
     text-align: center;
     line-height: 1.5;
     padding: 0 20px;
-    font-size: 20px;
+    font-size: 28px;
 }
 
 .error{
