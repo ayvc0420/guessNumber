@@ -46,6 +46,7 @@
     rand.addEventListener('click',randRun)
 
     function randRun(){
+        rand.textContent = '產生數字';
         numberMin = inputMin.value
         numberMin = parseInt(numberMin,10)
         numberMax = inputMax.value
@@ -84,7 +85,6 @@
             `
             count =0;
             guess.style.display = 'flex';
-            rand.style.bottom = '-10px';
             i1.style.marginBottom = '5px'
             i2.style.marginBottom = '0'
         }else{
@@ -140,9 +140,10 @@
             let strAns = String(answer).replace(/\B(?=(\d{3})+(?!\d))/g, ',')
             view.innerHTML=
             `
-                <span>答案是:${strAns}，你一共答了 <span style="font-size:40px;color:#55ff0f">${count}</span> 次!(含本次)</span><br>
+                <span>答案是:${strAns}，你一共答了 <span style="font-size:40px;color:#55ff0f">${count}</span> 次!<br>(含本次)</span><br>
                 <span>再次產生新的亂數可以重新遊玩</span>
             `
+            rand.textContent = '產生新的數字'
             guess.style.display = 'none';
             scope.style.display = 'none';
             if(count === 1){
