@@ -133,6 +133,7 @@
         let v = guessInput.value;
         // 轉換為數字型態
         v = parseInt(v,10);
+        guessInput.value = '';
         // console.log(v)
         if(v === answer){
             count +=1;
