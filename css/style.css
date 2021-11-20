@@ -5,7 +5,6 @@ main{
     justify-content: center;
     align-items: center;
     background-color: rgb(48, 156, 106);
-    padding-bottom: 40vh;
     font-family: 'Roboto Slab', serif;
 }
 main>h1{
@@ -22,6 +21,7 @@ main>h3{
     font-size: 36px;
     margin: 10px 0;
     color: cyan;
+    font-weight: 400;
 }
 main>span{
     color: rgb(125, 255, 194);
@@ -36,6 +36,7 @@ main>span{
     align-items: flex-start;
     color: cyan;
     font-size: 32px;
+    font-weight: 400;
 }
 .scanf>span{
     display: flex; 
@@ -109,15 +110,16 @@ input{
     font-size: 20px;
 }
 .fb_msg{
-    width: 40vw;
+    width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:300px;
+    margin:300px 0 50px 0;
     padding: 10px ;
     background-color: white;
     box-sizing: border-box;
 }
+
 footer{
     text-align: center;
     color: white;

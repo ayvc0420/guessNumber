@@ -138,6 +138,7 @@
             let strAns = String(answer).replace(/\B(?=(\d{3})+(?!\d))/g, ',')
             view.innerHTML=
             `
+                <span>你猜的範圍是${strMin}~${strMax}</span><br>
                 <span>答案是:${strAns}，你一共答了 <span style="font-size:40px;color:#55ff0f">${count}</span> 次!<br>(含本次)</span><br>
                 <span>再次產生新的亂數可以重新遊玩</span>
             `
@@ -146,6 +147,8 @@
             scope.style.display = 'none';
             if(count === 1){
                 view.innerHTML+=`<br><span style="color:#c9fc64;font-weight:900">太扯了，竟然一次就猜中。如果你不是把範圍設非常小的話，那你今天的運氣一定非常好!</span>`
+            }else if(count <=5){
+                view.innerHTML+=`<br><span style="color:#c9fc64;font-weight:900">五次內就猜中，實力還不錯喔!</span>`
             }
         }else if(v < answerMin || v > answerMax){
             view.innerHTML=
