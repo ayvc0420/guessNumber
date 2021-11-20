@@ -14,6 +14,10 @@
     <title>猜數字遊戲-終極密碼</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v12.0&appId=396306465225067&autoLogAppEvents=1" nonce="dN8R4h1n"></script>
+
 </head>
 <body>
     
@@ -22,8 +26,8 @@
         <span>遊戲說明 : 使用者自定義數字產生的範圍，包含最小範圍值及最大範圍值皆有可能是亂數範圍</span>
         <h3>輸入數字:</h3>
         <div class="scanf">
-            <span class="i1">最小範圍:<input type="number" id="inputMin" placeholder="0"></span>
-            <span class="i2">最大範圍:<input type="number" id="inputMax" placeholder="100"></span>
+            <span class="i1">最小範圍:<input type="number" id="inputMin" placeholder="10"></span>
+            <span class="i2">最大範圍:<input type="number" id="inputMax" placeholder="1000"></span>
             <button id="rand">產生數字</button>
         </div>
         <div class="scope">
@@ -36,6 +40,11 @@
         <div class="view">
             
         </div>
+        
+        <div class="fb_msg">
+            <div class="fb-comments" data-href="https://ayvc0420.github.io/guessNumber/" data-width="400" data-numposts="10"></div>
+        </div>
+
     </main>
 
     <footer>
