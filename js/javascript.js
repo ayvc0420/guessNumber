@@ -13,8 +13,8 @@
     
     const inputMin = document.getElementById('inputMin') 
     const inputMax = document.getElementById('inputMax')
-    let strMax
-    let strMin
+    let strMax;
+    let strMin;
     // 轉換後小的數字
     let numberMin;
     // 轉換後大得數字 
@@ -47,21 +47,20 @@
 
     function randRun(){
         rand.textContent = '產生數字';
-        numberMin = inputMin.value
-        numberMin = parseInt(numberMin,10)
-        numberMax = inputMax.value
-        numberMax = parseInt(numberMax,10)
+        numberMin = parseInt(inputMin.value,10)
+        numberMax = parseInt(inputMax.value,10)
         answerMax = numberMax;
         answerMin = numberMin;
         
         // 錯誤條件共用 避免寫更多if判斷
         if(numberMin >= numberMax){
-            err()
-        }else if(numberMin === 0 && numberMax === 0){
+            // 最小數字比最大數字還大時錯誤
             err()
         }else if(isNaN(inputMin.value) || isNaN(inputMax.value)){
+            // 如果不是輸入數字型態就報錯
             err()
         }else if(inputMin.value === '' || inputMax.value === ''){
+            // 如果是空值也報錯 不做trim
             err()
         }else if(!numberTest.test(numberMin)&&!numberTest.test(numberMax)){ 
             // console.log('ok')
@@ -140,7 +139,7 @@
             `
                 <span>你猜的範圍是${strMin}~${strMax}</span><br>
                 <span>答案是:${strAns}，你一共答了 <span style="font-size:40px;color:#55ff0f">${count}</span> 次!<br>(含本次)</span><br>
-                <span>再次產生新的亂數可以重新遊玩</span>
+                <span>重新產生新的亂數可以再次遊玩</span>
             `
             rand.textContent = '產生新的數字'
             guess.style.display = 'none';
